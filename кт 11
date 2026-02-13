@@ -1,0 +1,129 @@
+.pulse {
+  background-color: rgb(13, 117, 53);
+  color: aliceblue;
+  font-size: x-large;
+  border: none;
+  border-radius: 50px;
+  animation: pulse 2s infinite; 
+}
+@keyframes pulse {
+  50%  {transform: scale(2);}
+  50% {transform: rotateX(90deg);}
+}
+.hover {
+  background-color: rgb(218, 221, 47);
+  color: aliceblue;
+  font-size: x-large;
+  border: none;
+  border-radius: 50px;
+  animation: pulse 2s infinite;
+  transition: 0.5 ease; 
+}
+.hover:hover{
+  transform: scale(2);
+}
+.card{
+    background: goldenrod;
+    padding: 30px;
+    transition: all 6s ease-in-out;
+}
+.card:hover{
+ transform: scale(2);
+ background-color: rgb(235, 128, 128);
+}
+.text{
+ opacity: 0;
+ animation: appear 0.5s 1s forwards;   
+}
+
+@keyframes appear {
+    to {opacity: 100;}
+}
+header{
+    text-align: center;
+    background: rgb(255, 230, 167);
+    border: 1px;
+    border-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 6s ease-in-out;
+}
+header:hover{
+ transform: scale(1.5);
+ background-color: red;
+}
+.container {
+  width: 90%;      
+  max-width: 1200px; 
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;  
+}
+.pre{ 
+width: 90%;      
+  max-width: 1200px; 
+  margin: 0 auto;
+  justify-content: center;  
+}
+.cards1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 179, 179);
+    gap: 20px;
+}
+.cards2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 99, 212);
+    gap: 20px;
+}
+.cards3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 56, 6);
+    gap: 20px;
+}
+.grid-container{
+    font-size: 20px;
+    background: rgb(120, 179, 120);
+    border-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: left;
+}
+@media (max-width: 600px) {
+    .card {
+        flex: 3 3 100%;
+    }
+    }  
+h4 {
+ text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+p {
+ text-align: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    text-align: center;
+    background: rgb(255, 230, 167);
+    border: 1px;
+    border-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 6s ease-in-out;
+}
+footer:hover{
+ transform: scale(2);
+ background-color: red;
+}
